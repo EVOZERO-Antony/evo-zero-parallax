@@ -1,3 +1,4 @@
+<img width="1536" height="1024" alt="parallax" src="https://github.com/user-attachments/assets/90eb5c95-9636-4bc9-acde-e0bb4f4e3f6d" />
 # Parallax
 
 **A multi-angle decision instrument from the EVO ZERO lineage.**
