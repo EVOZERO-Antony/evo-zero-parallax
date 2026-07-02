@@ -1,115 +1,70 @@
 # Parallax
 
-**A multi-angle decision check for humans working with AI.**
+**A multi-angle decision instrument from the EVO ZERO lineage.**
 
-Parallax pressure-tests a claim or consequential decision from multiple levels of abstraction and from two opposing
-adversarial directions at every level. A validated fixpoint keeps the instrument from quietly moving its own reference
-while it reasons.
+[![Install Parallax](https://img.shields.io/badge/Install-Parallax-111111?style=for-the-badge)](#install)
 
-It is built for the moment when a conclusion feels *obvious* — especially when that conclusion is expensive,
-irreversible, emotionally loaded, or being pushed by one dominant voice.
+Parallax pressure-tests consequential decisions across multiple levels of abstraction and mirrored bull/bear attacks,
+while holding the analysis against a validated fixed reference.
 
-> Anchor on what does not move. Get angle from height, not from panning. Attack from both sides. Keep the human above
-> the verdict.
-
-## Why Parallax is different
-
-Ordinary red-teaming attacks a proposal from one direction. Parallax runs a mirrored pair at every altitude:
-
-| Control | Question |
-|---|---|
-| Fixpoint | What must remain true while the angles change? |
-| Altitude | What changes when we move above the problem's current plane? |
-| Bull | What is the strongest honest case for this? |
-| Bear | What is the strongest honest case against this? |
-| Critic | Did the instrument itself drift? |
-
-If every cell agrees in one direction, Parallax does not celebrate. It first suspects a false anchor, fake altitude, or
-one-sided attack.
-
-## Use it for
-
-- high-stakes or hard-to-reverse decisions;
-- conclusions that feel obviously positive or obviously negative;
-- founder, product, hiring, investment, strategy, and architecture verdicts;
-- decisions where one person, model, or disciplinary lens may dominate.
-
-Do not use it for cheap reversible choices or pure fact-checking. Verify facts first; use Parallax on the verdict.
+> Anchor on what does not move. Get angle from height, not panning. Attack from both sides. Keep the human above the verdict.
 
 ## Install
 
-The distributable skill lives in [`skills/parallax`](skills/parallax/).
+### One command
 
-### Codex
-
-Copy that directory into your personal skills folder:
+macOS / Linux:
 
 ```bash
-mkdir -p ~/.codex/skills
-cp -R skills/parallax ~/.codex/skills/parallax
+curl -fsSL https://raw.githubusercontent.com/EVOZERO-Antony/evo-zero-parallax/main/install.sh | sh
 ```
 
-Then invoke it explicitly:
+The installer downloads only `SKILL.md` and its UI metadata. Review [`install.sh`](install.sh) before running it.
+
+### Ask Codex
+
+Paste this into Codex:
 
 ```text
-Use $parallax to pressure-test whether we should launch this product now.
+$skill-installer Install Parallax from https://github.com/EVOZERO-Antony/evo-zero-parallax/tree/main/skills/parallax
 ```
 
-You can also ask naturally: `run parallax`, `parallax this`, `check my verdict`, or `am I drifting?`
-
-### Other AI agents
-
-Provide [`skills/parallax/SKILL.md`](skills/parallax/SKILL.md) as an instruction file or project rule. The method has no
-tool dependency, but the host must preserve the bull/bear separation and human decision boundary.
-
-## What the output contains
-
-1. A precise target and decision scale.
-2. An atom-level fixpoint self-test.
-3. A grid of at least three altitudes × bull/bear.
-4. A convergence reading and uncertainty band.
-5. An adversarial audit of the instrument itself.
-6. The deciding axis, next reality test, and explicit human decision boundary.
-
-## Lineage: EVO ZERO
-
-Parallax is a standalone reasoning instrument descended from **EVO ZERO**, the parent operating protocol for governed
-human–AI cognition created by Antony Sovetcenkovs.
-
-Its inheritance is concrete:
+If the skill does not appear immediately, restart Codex. Then invoke it with:
 
 ```text
-EVO ZERO principle                 Parallax implementation
--------------------------------    -------------------------------------
-Fixpoints govern generation        Validate an anchor before the grid
-Challenge belongs inside SWARM     Run bull and bear at every altitude
-AUDIT is not self-confirmation     Separate synthesis from critic
-Human remains above the loop       Return, never seize, decision authority
-Memory is intentionally governed   Keep only findings that survive audit
+Use $parallax to pressure-test this decision: ...
 ```
 
-Parallax does not claim to guarantee truth or eliminate bias. It is designed to make directional drift easier to see
-and harder to smuggle into a consequential verdict.
+GitHub pages cannot directly modify a local Codex installation, so the badge above leads to this one-command installer.
 
-Read the full provenance and boundary statement in [`docs/LINEAGE.md`](docs/LINEAGE.md).
+## What it does
 
-## Version
+1. Frames the exact verdict and decision scale.
+2. Validates an atomic fixed reference.
+3. Builds at least three abstraction levels × bull/bear attacks.
+4. Separates synthesis from criticism of the instrument itself.
+5. Returns the reading, uncertainty, reality test, and authority to the human.
 
-Current status: **v0.1.0 — Public Preview**.
+Uniform agreement is treated as a reason to re-check the anchor and lenses, not as automatic proof of either truth or
+instrument failure.
 
-See [`CHANGELOG.md`](CHANGELOG.md), [`RELEASE_NOTES-v0.1.0.md`](RELEASE_NOTES-v0.1.0.md), and the
-[`validation report`](docs/VALIDATION.md).
+## When to use it
 
-## Contributing
+Use Parallax for expensive, emotionally loaded, high-stakes, or hard-to-reverse decisions—especially when the answer
+feels obvious. Do not use it for cheap reversible choices or pure fact-checking.
 
-Issues and bounded examples are welcome. Changes must preserve the validated-anchor requirement, mirrored bull/bear
-attacks, independent critic, and human authority boundary. See [`CONTRIBUTING.md`](CONTRIBUTING.md).
+## EVO ZERO lineage
 
-## License
+Parallax is a standalone public instrument created by **Antony Sovetcenkovs** within the **EVO ZERO** lineage. It
+inherits principle-level commitments to fixed-reference reasoning, genuine abstraction separation, symmetric
+challenge, independent criticism, intentional retention, and human ownership of consequence.
 
-Parallax is licensed under [CC BY 4.0](LICENSE). You may share and adapt it with attribution to Antony Sovetcenkovs,
-Parallax, and its EVO ZERO lineage.
+This repository does not publish or define the internal architecture of EVO ZERO. Parallax does not guarantee truth,
+eliminate bias, or replace expert review.
 
----
+## Status and license
 
-Created by **Antony Sovetcenkovs** as part of the EVO ZERO lineage.
+Current release: **v0.1.1 — Public Preview**.
+
+Licensed under [CC BY 4.0](LICENSE). Attribution should preserve the author, Parallax name, source repository, and
+declared EVO ZERO lineage.

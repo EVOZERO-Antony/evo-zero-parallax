@@ -108,13 +108,10 @@ Return sections in this order:
 
 ## EVO ZERO lineage
 
-Apply Parallax as a standalone public instrument descended from EVO ZERO's governed-cognition principles:
+Apply Parallax as a standalone public instrument from the EVO ZERO lineage. Preserve only the public principles needed
+for this method: validate the reference, create genuine abstraction separation, challenge symmetrically, criticize the
+instrument independently, retain findings intentionally, and return consequence ownership to the human.
 
-- validated fixpoint → hold invariants rather than letting generation redefine them;
-- bull/bear grid → require challenge inside generation rather than after it;
-- synthesis plus independent critic → make AUDIT structurally different from confirmation;
-- human decision boundary → keep the human above the loop and owner of consequence;
-- record only surviving findings → preserve intentional memory instead of saving every generated claim.
-
-This lineage is architectural, not a proof claim. Do not say that Parallax guarantees truth, eliminates bias, or proves
-EVO ZERO. Say that it is designed to surface and reduce directional drift under its stated boundary conditions.
+Do not expose, reconstruct, or claim to define EVO ZERO's internal architecture. Do not say that Parallax guarantees
+truth, eliminates bias, or proves EVO ZERO. Say that it is designed to surface and reduce directional drift under its
+stated boundary conditions.
