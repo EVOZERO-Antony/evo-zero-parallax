@@ -1,0 +1,4 @@
+interface:
+  display_name: "Parallax"
+  short_description: "Multi-angle checks for consequential decisions"
+  default_prompt: "Use $parallax to pressure-test this decision from multiple levels and both adversarial directions."

@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use Parallax, cite this repository and its author."
+title: "Parallax: A Multi-Angle Decision Check"
+type: software
+version: 0.1.0
+date-released: 2026-07-03
+authors:
+  - family-names: "Sovetcenkovs"
+    given-names: "Antony"
+abstract: "A reasoning skill for pressure-testing consequential decisions across abstraction levels and opposing adversarial stances, anchored to a validated fixpoint."
+keywords:
+  - decision-making
+  - metacognition
+  - human-ai collaboration
+  - adversarial reasoning
+  - evo-zero
+license: "CC-BY-4.0"
+repository-code: "https://github.com/EVOZERO-Antony/evo-zero-parallax"
