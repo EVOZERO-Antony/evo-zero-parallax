@@ -19,7 +19,7 @@ while holding the analysis against a validated fixed reference.
 macOS / Linux:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/EVOZERO-Antony/evo-zero-parallax/main/install.sh | sh -s -- all
+curl -fsSL --connect-timeout 15 --max-time 60 --retry 2 https://raw.githubusercontent.com/EVOZERO-Antony/evo-zero-parallax/main/install.sh | sh -s -- all
 ```
 
 The installer downloads only `SKILL.md` and, for Codex, its UI metadata. Review [`install.sh`](install.sh) before
@@ -28,7 +28,7 @@ running it.
 ### Codex
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/EVOZERO-Antony/evo-zero-parallax/main/install.sh | sh -s -- codex
+curl -fsSL --connect-timeout 15 --max-time 60 --retry 2 https://raw.githubusercontent.com/EVOZERO-Antony/evo-zero-parallax/main/install.sh | sh -s -- codex
 ```
 
 Or paste into Codex:
@@ -50,7 +50,7 @@ Personal installation: `~/.agents/skills/parallax/` (or `$CODEX_HOME/skills/para
 ### Claude Code
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/EVOZERO-Antony/evo-zero-parallax/main/install.sh | sh -s -- claude
+curl -fsSL --connect-timeout 15 --max-time 60 --retry 2 https://raw.githubusercontent.com/EVOZERO-Antony/evo-zero-parallax/main/install.sh | sh -s -- claude
 ```
 
 Personal installation: `~/.claude/skills/parallax/`. Invoke directly with:
@@ -65,7 +65,7 @@ Claude Code follows the open Agent Skills format and watches personal skill fold
 ### Google Antigravity
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/EVOZERO-Antony/evo-zero-parallax/main/install.sh | sh -s -- antigravity
+curl -fsSL --connect-timeout 15 --max-time 60 --retry 2 https://raw.githubusercontent.com/EVOZERO-Antony/evo-zero-parallax/main/install.sh | sh -s -- antigravity
 ```
 
 Global IDE installation: `~/.gemini/config/skills/parallax/`. For one workspace instead:

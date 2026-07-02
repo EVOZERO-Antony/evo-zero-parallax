@@ -7,8 +7,8 @@ TEMP_DIR="$(mktemp -d)"
 trap 'rm -rf "$TEMP_DIR"' EXIT HUP INT TERM
 
 mkdir -p "$TEMP_DIR/source/agents"
-curl -fsSL "$REPO_RAW/SKILL.md" -o "$TEMP_DIR/source/SKILL.md"
-curl -fsSL "$REPO_RAW/agents/openai.yaml" -o "$TEMP_DIR/source/agents/openai.yaml"
+curl -fsSL --connect-timeout 15 --max-time 60 --retry 2 "$REPO_RAW/SKILL.md" -o "$TEMP_DIR/source/SKILL.md"
+curl -fsSL --connect-timeout 15 --max-time 60 --retry 2 "$REPO_RAW/agents/openai.yaml" -o "$TEMP_DIR/source/agents/openai.yaml"
 
 test -s "$TEMP_DIR/source/SKILL.md"
 test -s "$TEMP_DIR/source/agents/openai.yaml"
