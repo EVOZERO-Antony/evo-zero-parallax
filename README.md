@@ -2,7 +2,9 @@
 
 **A multi-angle decision instrument from the EVO ZERO lineage.**
 
-[![Install Parallax](https://img.shields.io/badge/Install-Parallax-111111?style=for-the-badge)](#install)
+[![Codex](https://img.shields.io/badge/Install-Codex-111111?style=for-the-badge)](#codex)
+[![Claude Code](https://img.shields.io/badge/Install-Claude_Code-D97757?style=for-the-badge)](#claude-code)
+[![Antigravity](https://img.shields.io/badge/Install-Antigravity-4285F4?style=for-the-badge)](#google-antigravity)
 
 Parallax pressure-tests consequential decisions across multiple levels of abstraction and mirrored bull/bear attacks,
 while holding the analysis against a validated fixed reference.
@@ -11,17 +13,24 @@ while holding the analysis against a validated fixed reference.
 
 ## Install
 
-### One command
+### Install everywhere
 
 macOS / Linux:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/EVOZERO-Antony/evo-zero-parallax/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/EVOZERO-Antony/evo-zero-parallax/main/install.sh | sh -s -- all
 ```
 
-The installer downloads only `SKILL.md` and its UI metadata. Review [`install.sh`](install.sh) before running it.
+The installer downloads only `SKILL.md` and, for Codex, its UI metadata. Review [`install.sh`](install.sh) before
+running it.
 
-### Ask Codex
+### Codex
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/EVOZERO-Antony/evo-zero-parallax/main/install.sh | sh -s -- codex
+```
+
+Or paste into Codex:
 
 Paste this into Codex:
 
@@ -35,7 +44,41 @@ If the skill does not appear immediately, restart Codex. Then invoke it with:
 Use $parallax to pressure-test this decision: ...
 ```
 
-GitHub pages cannot directly modify a local Codex installation, so the badge above leads to this one-command installer.
+Personal installation: `~/.agents/skills/parallax/` (or `$CODEX_HOME/skills/parallax/` when `CODEX_HOME` is set).
+
+### Claude Code
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/EVOZERO-Antony/evo-zero-parallax/main/install.sh | sh -s -- claude
+```
+
+Personal installation: `~/.claude/skills/parallax/`. Invoke directly with:
+
+```text
+/parallax
+```
+
+Claude Code follows the open Agent Skills format and watches personal skill folders for changes. See the
+[official Claude Code skills documentation](https://code.claude.com/docs/en/slash-commands).
+
+### Google Antigravity
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/EVOZERO-Antony/evo-zero-parallax/main/install.sh | sh -s -- antigravity
+```
+
+Global IDE installation: `~/.gemini/config/skills/parallax/`. For one workspace instead:
+
+```bash
+mkdir -p .agents/skills
+git clone --depth 1 https://github.com/EVOZERO-Antony/evo-zero-parallax.git /tmp/evo-zero-parallax
+cp -R /tmp/evo-zero-parallax/skills/parallax .agents/skills/parallax
+```
+
+Open Antigravity's `/skills` view to verify discovery. See the
+[official Antigravity skills documentation](https://antigravity.google/docs/skills?app=antigravity-ide).
+
+GitHub cannot directly modify a local AI-tool installation, so the badges lead to these one-command installers.
 
 ## What it does
 
@@ -64,7 +107,7 @@ eliminate bias, or replace expert review.
 
 ## Status and license
 
-Current release: **v0.1.1 — Public Preview**.
+Current release: **v0.1.2 — Public Preview**.
 
 Licensed under [CC BY 4.0](LICENSE). Attribution should preserve the author, Parallax name, source repository, and
 declared EVO ZERO lineage.
